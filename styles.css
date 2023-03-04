@@ -116,12 +116,7 @@ h1 {
   transition: ease .40s;
   font-size: 1rem;
 }
-@media screen and(max-width:769px) {
-  .about-us{
-    bottom:1vw !important;
-  }
-  
-}
+
 
 .about-us:hover{
     filter: brightness(50%);
@@ -182,7 +177,7 @@ a {
     @media screen and (max-width:768px) {
       .about-us{
         position: relative;
-        bottom: -80%;
+        bottom: -28rem;
       }
       #section1 h2 {
         font-size:1.5rem;
