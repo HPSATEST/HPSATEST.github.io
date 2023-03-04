@@ -12,7 +12,6 @@
 body {
     height: 100%;
     width: 100%;
-
     background: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url(images/medical.png);
     background-size: cover;
     background-position: center;
@@ -20,9 +19,6 @@ body {
     display:flex;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    
-
-    
 }
 
 html{
@@ -145,61 +141,48 @@ a {
 /*Next Section (Below Navbar)
     */
 
-#section1 {
-    background:rgb(38, 52, 80);
-    height: 18rem;
-    max-width:100%;
-    text-align: center;
-    position: relative;
-    top:90vh;
-    line-height: 1.4;
-    min-height: 100px;
-    overflow-x: hidden;
-   
-
-}
-
-#section1 h2 {
-    background:rgb(38, 52, 80);
-    width:100vw;
-    font-size: 2.5em;
-    position: relative;
-    top: 3.6rem;
-}
-
-#section1 p {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-    width: 100%;
-
-    position: relative;
-    top:4.5rem;
-    font-size: calc(1rem + 0.5vw);
-    margin-top: -1.0rem;
-}
-
-
-@media screen and (max-width:768px)  {
-  .about-us {
-  
-    
-    position: relative;
-    bottom: -80%;
-    
-  }
-  
-    
-  
-    #section1 h2{
-        font-size:1.5rem;
-        
+    #section1 {
+      background:rgb(38, 52, 80);
+      height: 17rem;
+      max-width:100%;
+      text-align: center;
+      position: relative;
+      top: 90vh; 
+      line-height: 1.4;
+      min-height: 100px;
+      overflow-x: hidden;
     }
-    #section1 p{
+  
+    #section1 h2 {
+      background:rgb(38, 52, 80);
+      width:100%;
+      font-size: 2.5rem;
+      position: relative;
+      top: 3.6rem;
+      margin-bottom: 0;
+    }
+  
+    #section1 p {
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+      width: 100%;
+      position: relative;
+      top:4.5rem;
+      font-size: calc(1rem + 0.5vw);
+      margin-top: -1.0rem;
+      margin-bottom: 0;
+    }
+  
+    @media screen and (max-width:768px) {
+      #section1 h2 {
+        font-size:1.5rem;
+        top: 2rem;
+      }
+      #section1 p {
         font-size:1.1rem;
-        
-        
-    } 
-}
+        top:3rem;
+      }
+    }
 
 /*
 Section 2 Under V 
@@ -867,5 +850,10 @@ ul{
       }
       .footer-col ul li a {
         font-size: 1.2rem;
+      }
+      @media only screen and (max-width: 768px){
+        body{
+
+        }
       }
 }
