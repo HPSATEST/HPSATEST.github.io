@@ -153,6 +153,7 @@ a {
       top:90vh;
       line-height: 1.4;
       min-height: 100px;
+      z-index: 1;
      
   
   }
@@ -353,20 +354,13 @@ Card Section
 }
 .card-text{
     font-weight: normal;
-    font-family: 'Times New Roman', Serif;
-    color:black;
+    color:rgb(54, 46, 46);
     text-align: center;
-    font-size:1.25rem;
     line-height: 1.3;
-   
-    display: flex; 
-    flex-direction: column; 
-
+    
 
 }
-.card-text h2{
-    max-height: fit-content;
-}
+
 .card-btn{
     position: relative;
     width:100%;
@@ -762,8 +756,86 @@ Card Section
 
 
 /* Footer section */
-.footer{
-    position: absolute;
-    background-color: #111;
 
+.footer {
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+  top:120vh;
+}
+
+.inside-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-content {
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+  
+}
+
+.footer-col {
+  flex-basis: 40%;
+  font-size:  1.3rem;
+}
+
+
+h3, h4 {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+
+  text-decoration: none;
+ 
+  
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-content {
+    flex-basis: 50%;
+    text-align: center;
+    
+  }
+  
+  .footer-col {
+    text-align: center;
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-content {
+    flex-basis: 100%;
+  }
+  
+  .footer-col {
+    flex-basis: 100%;
+  }
 }
