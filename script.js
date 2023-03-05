@@ -70,3 +70,6 @@ $(".toggle-button").click(function () {
     $("body").css("overflow-y", "visible");
   }
 });
+
+const container = document.querySelector('.container');
+container.style.width = `${container.scrollWidth}px`;
