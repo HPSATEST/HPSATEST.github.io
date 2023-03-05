@@ -94,8 +94,7 @@ nav ul li a {
 .container{
   min-height: 50px;
   overflow-x: clip;
-  -webkit-background-clip: padding-box; /* Safari 3.0 - 14.1 */
-  background-clip: padding-box; /* Standard syntax */
+ 
 
 
 }
@@ -188,7 +187,7 @@ a {
       #section1{
         position: relative;
         height:14rem;
-        top:100vh;
+        top:100%;
       }
 
       #section1 h2 {
