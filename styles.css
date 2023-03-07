@@ -28,6 +28,7 @@ body {
 html{
     scroll-behavior: smooth;
     height:100%;
+    
 }
 
 nav {
@@ -95,7 +96,7 @@ nav ul li a {
 .container{
   min-height: 50px;
   overflow-x: clip;
- 
+
 
 
 }
@@ -331,7 +332,6 @@ Card Section
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    grid-template-rows: auto 1fr;
     border-radius: 18px;
     transition: 0.1s ease;
     flex-wrap: wrap;
@@ -358,9 +358,10 @@ Card Section
     
 }
 .card-image img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    display: flex;
 }
 .card-text{
     font-weight: normal;
@@ -401,10 +402,16 @@ Card Section
     margin-left:1.5rem;
 
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cards {
+    flex-basis: 100%;
   }
 }
 
