@@ -3,6 +3,8 @@ let total = 0;
 function respondNav() {
 
   WindowWidth = $(window).width();
+  const container = document.querySelector('.container');
+container.style.width = `${container.scrollWidth}px`;
 
   if (WindowWidth <= 800) {
     $("nav ul").css("display", "none");
@@ -48,6 +50,8 @@ $(document).ready(function () {
   respondNav();
 })
 
+
+
 $(window).resize(function () {
   respondNav();
   $(".container").css("filter", "brightness(100%)");
@@ -71,5 +75,3 @@ $(".toggle-button").click(function () {
   }
 });
 
-const container = document.querySelector('.container');
-container.style.width = `${container.scrollWidth}px`;
