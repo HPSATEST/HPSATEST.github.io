@@ -1,0 +1,86 @@
+body {
+}
+.icons {
+  margin-right: 20px;
+  color: var(--textcolor);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.3rem;
+  top: 1vw;
+  right: 3vw;
+}
+.container {
+  display: inline-flex;
+  padding: 4px 12px;
+  border: 1px solid var(--nice-color);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  left: 87vw;
+  margin-top: 12px;
+}
+.icons:hover {
+  color: var(--nice-color);
+}
+
+.Resume {
+  display: flex;
+  text-decoration: none;
+  color: var(--nice-color);
+  margin: 5px;
+  font-size: 1.2rem;
+}
+.Resume:hover {
+}
+
+ul {
+  height: 100vh;
+  width: 70px;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: var(--nav-color);
+  list-style: none;
+  transition: transform 0.3s ease;
+  justify-content: space-around;
+}
+
+ul li {
+  padding: 10px;
+  margin-bottom: 30px;
+
+  writing-mode: vertical-lr;
+  font-size: 1.8rem;
+  color: var(--textcolor);
+}
+
+ul a {
+  align-items: center;
+  text-decoration: none;
+  color: var(--textcolor);
+  transition: color 0.3s ease;
+}
+
+ul a:hover {
+  color: var(--nice-color);
+}
+
+.Name {
+  writing-mode: horizontal-tb !important;
+  padding: 17 px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.period {
+  color: var(--nice-color);
+}
+.name-box {
+  background-color: var(--background-dark);
+  height: 50px;
+  padding: 0;
+  margin: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+:root {
+  --background-dark: #232323;
+  --nice-color: #ff004f;
+  --nav-color: #080808;
+  --textcolor: #ebecf3;
+  --background: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  background-color: var(--background);
+  overflow: hidden;
+}
