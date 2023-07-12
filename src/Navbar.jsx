@@ -8,21 +8,28 @@ function Navbar() {
   return (
     <div>
       <div className='container'>
-        <a className='Resume' href="" target='__blank'>My Resume</a>  
+        <button className='Resume' onClick={() => window.open('', '_blank')}>
+          My Resume
+        </button>
       </div>
-    
+
       <a href="#" target='_blank' className='icons'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
       <a href="#" target='_blank' className='icons'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
-      
-      
+
       <ul>
-        <div className='name-box'> 
+        <div className='name-box'>
           <li className='Name'>A <span className='period'>.</span></li>
         </div>
-        <a href=""> <li>About</li></a>
+        <a href=""><li>About</li></a>
         <a href=""><li>Project</li></a>
-        <a href="">  <li>Contact</li></a>
+        <a href=""><li>Contact</li></a>
       </ul>
+      <div className='Introduction'>
+        <h1>Hey, I'm Akshay</h1>
+        <h2>I'm a <span>Computer Science student attending  Toronto Metropolitan University. </span></h2>
+        <p>I'm currently a Full Stack Developer seeking many ways to improve my skills through problem solving creating various projects! Scroll down to learn more about me :D</p>
+        <button>Contact Me</button>
+      </div>
     </div>
   );
 }
