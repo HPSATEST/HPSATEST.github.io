@@ -1,0 +1,40 @@
+.About {
+  display: flex;
+  justify-content: center;
+  margin-top: 40vh;
+  color: var(--textcolor);
+  margin-right: 12vw;
+}
+h1 {
+  font-size: 5rem;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.line {
+  position: absolute;
+  border: 0.5px rgb(78, 78, 78) solid;
+  width: 100vw;
+  margin-bottom: 35rem;
+  z-index: -2;
+}
+
+.text {
+  margin-top: 100px;
+  color: white;
+  width: 40%;
+  line-height: 2;
+  flex-wrap: wrap;
+}
+
+.right-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  right: 20rem;
+  top: 20%;
+
+  color: var(--textcolor);
+}
