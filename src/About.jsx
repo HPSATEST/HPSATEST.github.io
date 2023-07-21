@@ -36,7 +36,7 @@ function About() {
       <h1 className='About'>
         About<span style={{ color: '#FF004F' }}>.</span>
       </h1>
-      <div className='line'>asdas</div>
+      <div className='line'></div>
       <div className='wrapper'>
         <div className='text'>
           <p>
