@@ -197,6 +197,7 @@ ul a:hover:after {
   .Resume {
     position: fixed;
     border: none !important;
+    z-index: 600 !important;
   }
 
   .Resume {

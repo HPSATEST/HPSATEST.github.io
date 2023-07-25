@@ -1,9 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar';
 import './CSS Files/App.css';
-import ParticlesComponent from './components/particles'; // Update the import statement
+import ParticlesComponent from './components/particles'; 
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <About />
       <Projects />
+      <Contact/>
     </div>
   );
 }

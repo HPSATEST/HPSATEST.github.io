@@ -29,10 +29,12 @@ function About() {
     'Machine Learning',
     'ThreeJS',
     'Tensor Flow',
+    'Framer Motion',
+    'Motion One',
   ];
 
   return (
-    <div className='something-else'>
+    <div className='about-sect' id='about'>
       <h1 className='About'>
         About<span style={{ color: '#FF004F' }}>.</span>
       </h1>
@@ -62,7 +64,7 @@ function About() {
             ))}
             <br />
             <h1>
-              <FontAwesomeIcon icon={faFaceSmileBeam} style={{ color: '#ff005a' }}  />
+              <FontAwesomeIcon icon={faFaceSmileBeam} style={{ color: '#ff005a' }}  /> {' '} 
                Learning
             </h1>
             {learning.map((item, index) => (

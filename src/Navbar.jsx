@@ -4,33 +4,28 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./CSS Files/Navbar.css";
 import Typewriter from 'typewriter-effect/dist/core';
 
-import { useState } from "react";
-
 function Navbar() {
   const typewriterRef = useRef(null);
 
-
   useEffect(() => {
-  const typewriter = new Typewriter(typewriterRef.current, {
-    strings: ['I am a Computer Science Student', 'I like coding', 'I enjoy watching shows', 'Keep scrolling!'],
-    autoStart: true,
-    loop: true,
-    typeSpeed: 30,
-    deleteSpeed: 50
-  });
+    const typewriter = new Typewriter(typewriterRef.current, {
+      strings: ['I am a Computer Science Student', 'I like coding', 'I enjoy watching shows', 'Keep scrolling!'],
+      autoStart: true,
+      loop: true,
+      typeSpeed: 30,
+      deleteSpeed: 50
+    });
 
-  typewriterRef.current.style.display = 'flex';
-  typewriterRef.current.style.flexWrap = 'wrap';
+    typewriterRef.current.style.display = 'flex';
+    typewriterRef.current.style.flexWrap = 'wrap';
 
-  return () => {
-    typewriter.stop();
-  };
-}, []);
+    return () => {
+      typewriter.stop();
+    };
+  }, []);
 
-
-  
   return (
-    <div>
+    <div id="navbar">
       <div className="container">
         <button className="Resume" onClick={() => window.open("", "_blank")}>
           My Resume
@@ -50,10 +45,10 @@ function Navbar() {
             A <span className="period">.</span>
           </li>
         </div>
-        <a href="">
+        <a href="#about"> 
           <li>About</li>
         </a>
-        <a href="">
+        <a href="#projects"> 
           <li>Projects</li>
         </a>
         <a href="">
@@ -71,15 +66,9 @@ function Navbar() {
           to learn more about me
         </p>
         <button>Contact Me</button>
-       
-
       </div>
-       
-
-    
     </div>
   );
-  
 }
 
 export default Navbar;

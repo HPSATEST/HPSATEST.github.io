@@ -10,10 +10,10 @@
 .wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 1fr;
   width: 70%;
   color: var(--textcolor);
-  justify-content: center;
+
   margin: 5rem auto;
   grid-gap: 2rem;
   gap: 2rem;
@@ -50,10 +50,13 @@
   .About {
     margin-top: 20vh;
     font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .wrapper {
-    padding: 3rem;
+    padding-left: 5rem;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
