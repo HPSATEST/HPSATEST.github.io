@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
-  margin: 12rem;
+  margin: 13rem;
   gap: 15rem;
   margin-bottom: 2rem;
 }
@@ -41,8 +41,22 @@
   object-fit: cover;
   border-radius: 30px;
   padding: 20px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
-/* Add this CSS for responsiveness */
+.images:hover {
+  transform: scale(0.9); /* Adjust the scale value as desired */
+}
+.project-info a {
+  color: white;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.project-info a:hover {
+  color: var(--nice-color);
+}
+
 @media (max-width: 1150px) {
   .title {
     font-size: 3rem;

@@ -15,10 +15,9 @@
   font-family: "Lilita One", cursive;
   font-weight: 100;
 }
-
 body {
   scroll-behavior: smooth;
-  max-width: 100vw;
+  max-width: 95vw;
   background-color: var(--background);
   overflow-x: hidden;
 }

@@ -78,6 +78,9 @@ ul li {
   font-size: 1.8rem;
   color: var(--textcolor);
 }
+ul li:hover {
+  cursor: pointer;
+}
 
 ul a {
   display: inline-block;
@@ -170,8 +173,8 @@ ul a:hover:after {
   justify-content: center;
   text-align: center;
   margin: 1em 0;
-  padding-left: 70px; /* Add left padding to create space for the navbar */
-  padding-right: 70px; /* Add right padding to create space for the navbar */
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .Introduction button {
   outline: none;
